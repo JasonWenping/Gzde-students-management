@@ -1,0 +1,22 @@
+﻿.list_Header
+{
+    height:40px;
+    font-size:18px;
+    color:#000;
+    background-color:White;
+}
+.list_Header th
+{
+    padding:0 10px;
+    text-align:center;
+}
+.list_Row
+{
+    background-color:#e4e4e4;
+    height:35px;
+}
+.list_Row th
+{
+    padding:0 10px;
+    text-align:center;
+}

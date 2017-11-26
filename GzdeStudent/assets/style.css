@@ -1,0 +1,246 @@
+﻿body 
+{
+    margin:0;
+}
+.main
+{
+    width:100%;
+    height:100%;
+    margin:0px;
+}
+.logo
+{
+    width:458px;
+    height:74px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:50px;
+    background-image:url(../assets/images/logo_img.png);
+}
+.login
+{
+    background-image:url(../assets/images/login_bg.png);
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:50px;
+    width:496px;
+    height:303px;
+}
+.login_table
+{
+    padding:50px 50px;
+    font-size:14px;
+    color:#fff;
+    font-family:@微软雅黑;
+}
+.cheButtom
+{
+    margin:3px 0 0 80px ;
+    display:block;
+}
+.signin_buttom
+{
+    margin:25px 30px;
+}
+.login_shadow
+{
+    background-image:url(../assets/images/Login_bg_shadow.png);
+    margin-left:auto;
+    margin-right:auto;
+    width:476px;
+    height:123px; 
+}
+.login_CopyRight
+{
+    text-align:center;
+    color:#fff;
+    font-size:14px;
+}
+
+
+/*****************index***********************/
+.top_Banner
+{
+    height:121px;
+    background-image:url(../assets/images/index_top_bg.jpg);
+}
+.top_Logo
+{
+    padding:40px;
+}
+.top_Link
+{
+    float:right;
+    padding:0 150px;
+    color:#fff;
+}
+.content_All_page
+{
+    width:100%;
+    margin-top:1px;    
+    border-top:1px solid #c1c1c1;
+}
+.left_banner
+{
+    width:208px;
+    height:837px;
+    background-image:url(../assets/images/nav_bg_img.jpg);
+    background-repeat:no-repeat;
+    float:left;
+}
+.right_banner
+{
+    min-width:70%;
+    float:left;
+    margin:0 35px;
+    font-size:13px;
+    
+}
+.user_info
+{
+    text-align:right;
+    height:30px;
+    margin:30px 20px 0 50px;
+}
+.title_SiteMap
+{
+    float:left;
+    height:41px;
+    width:100%;
+    border:1px solid #9a9a9a;
+    background-image:url(../assets/images/map_bg_line.gif);
+}
+.title_SiteMap_text
+{
+    padding:5px 10px;
+}
+.foot_banner
+{
+    margin-top:20px;
+    text-align:right;
+    line-height:25px;
+}
+
+/**************** PlaceHolder *************/
+
+.Middle_holder
+{
+    width:100%;
+    height:auto;
+    float:left;
+    margin-top:15px;
+}
+.float_Clear
+{
+    clear:both;
+}
+
+.search_Banner
+{
+    height:94px;
+    border:1px solid #9a9a9a;
+    width:100%;
+    background-image:url(../assets/images/search_bg_line.gif);
+}
+.search_Banner_pic
+{
+    margin:25px;
+    float:left;
+}
+.search_Banner_textBox
+{
+    margin:10px;
+    float:left;
+    color:#fff;
+}
+.search_Buttom
+{
+    background-image:url(../assets/images/search.jpg);
+    width:102px;
+    height:27px;
+    cursor:pointer;
+    margin:50px 0 0 0px;
+    border:1px solid #555;
+}
+.page_Banner
+{
+    width:100%;
+    margin-top:15px;
+    background-color:#fff;
+    border:1px solid #9a9a9a;
+    min-height:500px;
+}
+.page_Title
+{
+    height:41px;
+    background-image:url(../assets/images/title_bg_line.gif);
+    border-bottom:1px solid #9a9a9a;
+    width:100%;
+}
+.page_Title span
+{
+    font:16px "Microsoft YaHei", arial, serif bold;
+    display:block;
+    padding-top:8px;
+}
+.page_Content
+{
+    padding:20px;
+}
+.page_Content h1
+{
+    width:100%;
+    height:35px;
+    background-color:#e1e1e1;
+    font-size:14px;
+}
+.page_Content h1 span
+{
+    display:block;
+    padding:10px;
+}
+.page_Content h2 span
+{
+    text-align:center;
+    display:block;
+    padding:20px 0 20px 0;
+}
+.page_Table
+{
+    width:100%;
+    padding:10px;
+    line-height:25px;
+}
+.print_Text
+{
+    margin-top:20px;
+    width:800px;
+    line-height:25px;
+}
+.mark_Name
+{
+    width:90%;
+    border:1px solid #000;
+    height:150px;
+}
+.mark_Name h4
+{
+    text-align:center;
+    font-size:18px;
+    height:30px;
+}
+.mark_Name h5
+{
+    text-align:right;
+    padding-right:160px;
+    height:20px;
+}
+.mark_Name p
+{
+    text-align:right;
+    padding-right:60px;
+}
+.statistic
+{
+    line-height:25px;
+}

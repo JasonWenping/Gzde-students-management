@@ -1,0 +1,127 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="page.master.cs" Inherits="GzdeStudent.page" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="assets/style.css" rel="Stylesheet" type="text/css" />
+    <link href="assets/nav.css" rel="Stylesheet" type="text/css" /> 
+    <link href="assets/datatable.css" rel="Stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body style="background-color: #f3f3f3;">
+    <form id="form1" runat="server">
+    <div>
+        <div class="top_Banner">
+            <div class="top_Logo">
+                <img src="../assets/images/logo.png" alt="国之栋教育学员系统" style="float:left" />
+            </div>
+            <div class="top_Link">
+                <asp:HyperLink ID="HyperLink2" runat="server"><img src="../assets/images/home_page.png" alt="#" />主页</asp:HyperLink><img src="../assets/images/collect_page.png" alt="" />收藏<asp:HyperLink
+                ID="HyperLink1" runat="server" NavigateUrl="~/logout.aspx">退出登录</asp:HyperLink>
+            </div>
+            <div class="float_Clear"></div>
+        </div>
+        <div class="content">
+            <div class="left_banner">
+                <img src="../assets/images/nav_flower.png" alt="#" />
+                <div>
+                    <ul class="menu-one">
+                        <li class="firstChild">
+                            <div class="header">
+                                <img src="../assets/images/nav_list.png" alt="#" style="float: right" /></div>
+                            <ul class="menu-two">
+                                <li class="firstChild"><a href="../Default.aspx">系统主页</a></li>
+                            </ul>
+                        </li>
+                        <li class="firstChild">
+                            <div class="header">
+                                <img src="../assets/images/nav_list2.png" alt="#" style="float: right" /></div>
+                            <ul class="menu-two">
+                                <li class="firstChild"><a href="../pageUnit/studentsAdd.aspx">学员添加</a></li>
+                                <li><a href="../pageUnit/studentsList.aspx">查看学员</a></li>
+                                <li><a href="../pageUnit/studentsDetail.aspx">一阶学员</a></li>
+                                <li><a href="../pageUnit/studentsList.aspx">二阶学员</a></li>
+                                <li><a href="../pageUnit/studentsList.aspx">三阶学员</a></li>
+                            </ul>
+                        </li>
+                        <li class="firstChild">
+                            <div class="header">
+                                <img src="../assets/images/nav_list3.png" alt="#" style="float: right" /></div>
+                            <ul class="menu-two">
+                                <li class="firstChild"><a href="../pageUnit/managerAdd.aspx">添加用户</a></li>
+                                <li><a href="../pageUnit/managerList.aspx">查看用户</a></li>
+                            </ul>
+                        </li>
+                        <li class="firstChild">
+                            <div class="header">
+                                <img src="../assets/images/nav_list4.png" alt="#" style="float: right" /></div>
+                            <ul class="menu-two">
+                                <li class="firstChild"><a href="../pageUnit/statisticsPage.aspx">报名人数统计</a></li>
+                                <li><a href="#">图表统计</a></li>
+                                <li><a href="#">分类报表</a></li>
+                            </ul>
+                        </li>
+                        <li class="firstChild">
+                            <div class="header">
+                                <img src="../assets/images/nav_list5.png" alt="#" style="float: right" /></div>
+                            <ul class="menu-two">
+                                <li class="firstChild"><a href="#">系统信息</a></li>
+                                <li><a href="#">系统设置</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right_banner">
+                <div class="user_info">
+                    你好， 
+                    <asp:Label ID="Label1" runat="server" Text="admin"></asp:Label> 欢迎登录！今天是<asp:Label ID="Label2" runat="server" Text="2014年5月29日 星期四"></asp:Label>
+                </div>
+                <div class="title_SiteMap">
+                    <div class="title_SiteMap_text">
+                        <img src="../assets/images/title_icon_site.png" alt="" />
+                        你当前所在位置：
+                        <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
+                    </div>
+                </div>
+                <div class="float_Clear"></div>
+                <div class="Middle_holder">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+                </div>
+                <div class="float_Clear"></div>
+                <div class="foot_banner">
+                辽ICP备案：0000000号  CopyRight @ 版权所有：本站由国之栋教育科技集团信息技术部提供技术支持<br />
+                联系电话：15041133149  邮箱：gzde_yanwenping@126.com 国之栋教育官网：www.gzdedu.com
+                </div>
+            </div>
+        </div>
+            <script type="text/javascript" src="../js/jquery-1.10.1.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        var aMenuOneLi = $(".menu-one > li");
+        var aMenuTwo = $(".menu-two");
+        $(".menu-one > li > .header").each(function (i) {
+            $(this).click(function () {
+                if ($(aMenuTwo[i]).css("display") == "block") {
+                    $(aMenuTwo[i]).slideUp(300);
+                    $(aMenuOneLi[i]).removeClass("menu-show")
+                } else {
+                    for (var j = 0; j < aMenuTwo.length; j++) {
+                        $(aMenuTwo[j]).slideUp(300);
+                        $(aMenuOneLi[j]).removeClass("menu-show");
+                    }
+                    $(aMenuTwo[i]).slideDown(300);
+                    $(aMenuOneLi[i]).addClass("menu-show")
+                }
+            });
+        });
+    });
+</script>
+        </div>
+
+    </form>
+</body>
+</html>
